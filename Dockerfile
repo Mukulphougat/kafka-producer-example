@@ -1,11 +1,9 @@
-FROM ubuntu:latest
+# Use a base image with Java installed
+FROM openjdk:17-jdk-slim
 LABEL authors="mukul"
 
 # Set the working directory inside the container
 WORKDIR /app
-# Use a base image with Java installed
-FROM openjdk:17-jdk-slim
-
 
 # Copy the jar file into the container
 COPY target/*.jar app.jar

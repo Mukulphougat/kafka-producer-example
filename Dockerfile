@@ -1,5 +1,5 @@
-FROM ubuntu:latest
-LABEL authors="mukul"
+#FROM ubuntu:latest
+#LABEL authors="mukul"
 # Use a base image with Java installed
 FROM openjdk:17-jdk-slim
 
